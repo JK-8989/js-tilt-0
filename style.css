@@ -1,0 +1,121 @@
+:root {
+  --background:#222222;
+  --text-color: rgb(255, 255, 255);
+  --accent-color: rgb(247, 254, 167);
+  --highlight-color: rgb(45, 248, 255);
+  --left: 60px;
+  /* --accent-hover: rgba(0, 225, 255, 0.5); */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+body {
+  background: var(--background);
+  overflow: hidden;
+}
+header {
+  display: flex;
+  place-content: center;
+  margin-top: 2rem;
+  min-height: 5em;
+}
+
+header nav {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  place-content: center;
+  backdrop-filter: blur(16px) brightness(150%);
+  border-radius: 16px;
+  z-index: 10;
+  position: relative;
+  border: 3px solid var(--background);
+}
+header ul li {
+  width: 96px;
+  height: 96px;
+  display: grid;
+  place-content: center;
+  height: 4rem;
+}
+header ul li:hover {
+  cursor: pointer;
+}
+header ul li span {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+header ul li.active span {
+  color: var( --highlight-color);
+}
+header nav .indicator {
+  width: 60px;
+  height: 82px;
+  background-image: linear-gradient(to bottom, 
+            var(--accent-color) 0%,
+            var(--background) 20%,
+            var(--background) 80%,
+            var(--accent-color) 100%);
+  position: absolute;
+  border-radius: 16px;
+  top: -4px;
+  z-index: 1;
+  left: calc(var(--left) + 16px);
+}
+main {
+  /* width: 100vw;
+  height: 100vh; */
+  /* position: relative; */
+}
+.container {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 900px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s ease;
+}
+.nfts {
+  background: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  z-index: -1;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+}
+img {
+  vertical-align: top;
+  width: 140px;
+  border-radius: 10px;
+}
+h1 {
+text-align: center;
+color: rgba(251, 251, 251, 0.5);
+font-size: 4rem;
+margin-top: 3rem;
+padding: 2rem;
+opacity: 0;
+transition-delay: 1s;
+transition: all 1s ease;
+}

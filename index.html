@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tilt-test</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/2ee8ce4aa8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="active">
+            <span class="material-symbols-rounded">home</span>
+          </li>
+          <li>
+            <span class="material-symbols-rounded">person_outline</span>
+          </li>
+          <li>
+            <span class="material-symbols-rounded">mail_outline</span>
+          </li>
+          <li>
+            <span class="material-symbols-rounded">slideshow</span>
+          </li>
+          <li>
+            <span class="material-symbols-rounded">settings</span>
+          </li>
+        </ul>
+        <div class="indicator"></div>
+      </nav>
+    </header>
+    <!-- <h1>NakedClan</h1> -->
+    <main>
+      <div class="container">
+        <div class="nfts">
+          <img src="./images/09954.png" alt="nft-image" />
+        </div>
+        <div class="nfts">
+          <img src="./images/09969.png" alt="nft-image" />
+        </div>
+        <div class="nfts">
+          <img src="./images/09988.png" alt="nft-image" />
+        </div>
+        <div class="nfts">
+          <img src="./images/09975.png" alt="nft-image" />
+        </div>
+        <div class="nfts">
+          <img src="./images/09986.png" alt="nft-image" />
+        </div>
+        <div class="nfts">
+          <img src="./images/09964.png" alt="nft-image" />
+        </div>
+        <div class="nfts">
+          <img src="./images/09981.png" alt="nft-image" />
+        </div>
+        <div class="nfts">
+          <img src="./images/09992.png" alt="nft-image" />
+        </div>
+        <div class="nfts">
+          <img src="./images/09967.png" alt="nft-image" />
+        </div>
+        <div class="nfts">
+          <img src="./images/09989.png" alt="nft-image" />
+        </div>
+        <div class="nfts">
+          <img src="./images/09991.png" alt="nft-image" />
+        </div>
+        <div class="nfts">
+          <img src="./images/09977.png" alt="nft-image" />
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".nfts"), {
+        max: 0,
+        speed: 100,
+        glare: true,
+      });
+    </script>
+  </body>
+</html>
